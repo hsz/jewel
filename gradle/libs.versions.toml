@@ -1,12 +1,12 @@
 [versions]
 commonmark = "0.22.0"
-composeDesktop = "1.6.10-dev1584"
+composeDesktop = "1.6.20-dev1646"
 detekt = "1.23.4"
 dokka = "1.8.20"
-idea = "241.17011.79"
-ideaGradlePlugin = "1.17.1"
+idea = "242.10180.25-EAP-SNAPSHOT"
+ideaGradlePlugin = "2.0.0-beta2"
 jna = "5.14.0"
-kotlin = "1.8.21"
+kotlin = "1.9.24"
 kotlinSarif = "0.5.0"
 kotlinpoet = "1.15.2"
 kotlinterGradlePlugin = "3.16.0"
@@ -46,7 +46,7 @@ idea = ["ij-platform-ide-core", "ij-platform-ide-impl", "ij-platform-core-ui"]
 composeDesktop = { id = "org.jetbrains.compose", version.ref = "composeDesktop" }
 detekt = { id = "io.gitlab.arturbosch.detekt", version.ref = "detekt" }
 dokka = { id = "org.jetbrains.dokka", version.ref = "dokka" }
-ideaGradlePlugin = { id = "org.jetbrains.intellij", version.ref = "ideaGradlePlugin" }
+ideaGradlePlugin = { id = "org.jetbrains.intellij.platform", version.ref = "ideaGradlePlugin" }
 kotlinJvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
 kotlinx-binaryCompatValidator = { id = "org.jetbrains.kotlinx.binary-compatibility-validator", version.ref = "kotlinxBinaryCompat" }
 kotlinx-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }

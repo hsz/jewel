@@ -5,24 +5,17 @@ plugins {
     `android-studio-releases-generator`
 }
 
-intellij {
-    pluginName = "Jewel Demo"
-    plugins = listOf("org.jetbrains.kotlin")
-    version = libs.versions.idea.get()
-}
-
-// TODO remove this once the IJ Gradle plugin fixes their repositories bug
-// See https://github.com/JetBrains/gradle-intellij-plugin/issues/776
 repositories {
-    maven("https://maven.pkg.jetbrains.space/public/p/compose/dev")
-    maven("https://www.jetbrains.com/intellij-repository/releases")
-    maven("https://cache-redirector.jetbrains.com/intellij-dependencies")
-    google()
-    mavenCentral()
-
+    intellijPlatform {
+        defaultRepositories()
+    }
 }
 
 dependencies {
+    intellijPlatform {
+        bundledPlugins("org.jetbrains.kotlin")
+    }
+
     implementation(projects.ideLafBridge) {
         exclude(group = "org.jetbrains.kotlinx")
     }
@@ -35,6 +28,11 @@ dependencies {
         exclude(group = "org.jetbrains.compose.material")
         exclude(group = "org.jetbrains.kotlinx")
     }
+}
+
+intellijPlatform {
+    pluginConfiguration { name = "Jewel Demo" }
+    version = libs.versions.idea.get()
 }
 
 tasks {
