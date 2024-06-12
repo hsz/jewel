@@ -7,7 +7,7 @@ plugins {
 }
 
 dependencies {
-    api(projects.ui) {
+    api(project(":ui")) {
         exclude(group = "org.jetbrains.kotlinx")
     }
 

@@ -6,6 +6,6 @@ plugins {
 }
 
 dependencies {
-    api(projects.decoratedWindow)
-    api(projects.intUi.intUiStandalone)
+    api(project(":decorated-window"))
+    api(project(":int-ui:int-ui-standalone"))
 }

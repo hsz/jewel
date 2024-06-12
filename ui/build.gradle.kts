@@ -12,7 +12,7 @@ private val composeVersion
     get() = ComposeBuildConfig.composeVersion
 
 dependencies {
-    api(projects.foundation)
+    api(project(":foundation"))
 
     testImplementation(compose.desktop.uiTestJUnit4)
     testImplementation(compose.desktop.currentOs) {

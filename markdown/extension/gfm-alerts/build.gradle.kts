@@ -6,7 +6,7 @@ plugins {
 }
 
 dependencies {
-    implementation(projects.markdown.core)
+    implementation(project(":markdown:core"))
 
     testImplementation(compose.desktop.uiTestJUnit4)
 }

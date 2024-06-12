@@ -6,7 +6,7 @@ plugins {
 }
 
 dependencies {
-    implementation(projects.markdown.core)
+    implementation(project(":markdown:core"))
     implementation(libs.commonmark.ext.autolink)
     testImplementation(compose.desktop.uiTestJUnit4)
 }

@@ -6,24 +6,24 @@ plugins {
 }
 
 dependencies {
-    sarif(projects.decoratedWindow)
-    sarif(projects.foundation)
-    sarif(projects.ideLafBridge)
-    sarif(projects.intUi.intUiDecoratedWindow)
-    sarif(projects.intUi.intUiStandalone)
-    sarif(projects.markdown.core)
-    sarif(projects.markdown.extension.autolink)
-    sarif(projects.markdown.extension.gfmAlerts)
-    sarif(projects.markdown.ideLafBridgeStyling)
-    sarif(projects.markdown.intUiStandaloneStyling)
-    sarif(projects.samples.idePlugin)
-    sarif(projects.samples.standalone)
-    sarif(projects.ui)
+//    sarif(project(":decorated-window"))
+//    sarif(project(":foundation"))
+//    sarif(project(":ide-laf-bridge"))
+//    sarif(project(":int-ui:int-ui-decorated-window"))
+//    sarif(project(":int-ui:int-ui-standalone"))
+//    sarif(project(":markdown:core"))
+//    sarif(project(":markdown:extension:autolink"))
+//    sarif(project(":markdown:extension:gfm-alerts"))
+//    sarif(project(":markdown:ide-laf-bridge-styling"))
+//    sarif(project(":markdown:int-ui-standalone-styling"))
+//    sarif(project(":samples:ide-plugin"))
+//    sarif(project(":samples:standalone"))
+//    sarif(project(":ui"))
 }
 
 tasks {
     val mergeSarifReports by registering(MergeSarifTask::class) {
-        source(configurations.outgoingSarif)
+//        source(configurations.outgoingSarif)
         include { it.file.extension == "sarif" }
     }
 

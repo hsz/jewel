@@ -10,11 +10,11 @@ plugins {
 dependencies {
     implementation(libs.kotlin.reflect)
     implementation(libs.filePicker)
-    implementation(projects.intUi.intUiStandalone)
-    implementation(projects.intUi.intUiDecoratedWindow)
-    implementation(projects.markdown.intUiStandaloneStyling)
-    implementation(projects.markdown.extension.gfmAlerts)
-    implementation(projects.markdown.extension.autolink)
+    implementation(project(":int-ui:int-ui-standalone"))
+    implementation(project(":int-ui:int-ui-decorated-window"))
+    implementation(project(":markdown:int-ui-standalone-styling"))
+    implementation(project(":markdown:extension:gfm-alerts"))
+    implementation(project(":markdown:extension:autolink"))
     implementation(compose.desktop.currentOs) {
         exclude(group = "org.jetbrains.compose.material")
     }
