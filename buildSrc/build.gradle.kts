@@ -3,5 +3,5 @@ plugins {
 }
 
 dependencies {
-    implementation(libs.kotlin.gradlePlugin)
+    implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.24")
 }

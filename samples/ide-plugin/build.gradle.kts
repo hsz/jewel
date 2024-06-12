@@ -1,7 +1,7 @@
 plugins {
     jewel
-    alias(libs.plugins.composeDesktop)
-    alias(libs.plugins.ideaGradlePlugin)
+    id("org.jetbrains.compose") version "1.6.20-dev1646"
+    id("org.jetbrains.intellij.platform") version "2.0.0-beta3"
 }
 
 repositories {
