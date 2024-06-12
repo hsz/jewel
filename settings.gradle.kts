@@ -4,8 +4,8 @@
 
 rootProject.name = "jewel"
 
-include(
-    ":samples:ide-plugin",
-)
+//include(
+//    ":samples:ide-plugin",
+//)
 
-includeBuild("/Users/hsz/Projects/JetBrains/intellij-platform-gradle-plugin")
+//includeBuild("/Users/hsz/Projects/JetBrains/intellij-platform-gradle-plugin")
