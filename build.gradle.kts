@@ -1,28 +1,6 @@
 import java.io.ByteArrayOutputStream
 
-plugins {
-    alias(libs.plugins.composeDesktop) apply false
-}
-
-dependencies {
-//    sarif(project(":decorated-window"))
-//    sarif(project(":foundation"))
-//    sarif(project(":ide-laf-bridge"))
-//    sarif(project(":int-ui:int-ui-decorated-window"))
-//    sarif(project(":int-ui:int-ui-standalone"))
-//    sarif(project(":markdown:core"))
-//    sarif(project(":markdown:extension:autolink"))
-//    sarif(project(":markdown:extension:gfm-alerts"))
-//    sarif(project(":markdown:ide-laf-bridge-styling"))
-//    sarif(project(":markdown:int-ui-standalone-styling"))
-//    sarif(project(":samples:ide-plugin"))
-//    sarif(project(":samples:standalone"))
-//    sarif(project(":ui"))
-}
-
 tasks {
-
-
     register("tagRelease") {
         dependsOn("check")
 

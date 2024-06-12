@@ -1,54 +1,15 @@
 [versions]
-commonmark = "0.22.0"
 composeDesktop = "1.6.20-dev1646"
-detekt = "1.23.4"
-dokka = "1.8.20"
-idea = "242.10180.25-EAP-SNAPSHOT"
 ideaGradlePlugin = "2.0.0-beta3"
-jna = "5.14.0"
 kotlin = "1.9.24"
-kotlinSarif = "0.5.0"
-kotlinpoet = "1.15.2"
-kotlinterGradlePlugin = "3.16.0"
 kotlinxSerialization = "1.5.1"
-kotlinxBinaryCompat = "0.14.0"
-poko = "0.13.1"
 
 [libraries]
-commonmark-core = { module = "org.commonmark:commonmark", version.ref = "commonmark" }
-commonmark-ext-autolink = { module = "org.commonmark:commonmark-ext-autolink", version.ref = "commonmark" }
-
-filePicker = { module = "com.darkrockstudios:mpfilepicker", version = "3.1.0" }
-
-kotlinSarif = { module = "io.github.detekt.sarif4k:sarif4k", version.ref = "kotlinSarif" }
-kotlin-reflect = { module = "org.jetbrains.kotlin:kotlin-reflect", version.ref = "kotlin" }
 kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerialization" }
 
-ij-platform-ide-core = { module = "com.jetbrains.intellij.platform:ide-core", version.ref = "idea" }
-ij-platform-ide-impl = { module = "com.jetbrains.intellij.platform:ide-impl", version.ref = "idea" }
-ij-platform-core-ui = { module = "com.jetbrains.intellij.platform:core-ui", version.ref = "idea" }
-
-jna-core = { module = "net.java.dev.jna:jna", version.ref = "jna" }
-
 # Plugin libraries for build-logic's convention plugins to use to resolve the types/tasks coming from these plugins
-detekt-gradlePlugin = { module = "io.gitlab.arturbosch.detekt:detekt-gradle-plugin", version.ref = "detekt" }
-dokka-gradlePlugin = { module = "org.jetbrains.dokka:dokka-gradle-plugin", version.ref = "dokka" }
 kotlin-gradlePlugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
-kotlinpoet = { module = "com.squareup:kotlinpoet", version.ref = "kotlinpoet" }
-kotlinter-gradlePlugin = { module = "org.jmailen.gradle:kotlinter-gradle", version.ref = "kotlinterGradlePlugin" }
-kotlinx-binaryCompatValidator-gradlePlugin = { module = "org.jetbrains.kotlinx:binary-compatibility-validator", version.ref = "kotlinxBinaryCompat" }
-poko-gradlePlugin = { module = "dev.drewhamilton.poko:poko-gradle-plugin", version.ref = "poko" }
-
-[bundles]
-idea = ["ij-platform-ide-core", "ij-platform-ide-impl", "ij-platform-core-ui"]
 
 [plugins]
 composeDesktop = { id = "org.jetbrains.compose", version.ref = "composeDesktop" }
-detekt = { id = "io.gitlab.arturbosch.detekt", version.ref = "detekt" }
-dokka = { id = "org.jetbrains.dokka", version.ref = "dokka" }
 ideaGradlePlugin = { id = "org.jetbrains.intellij.platform", version.ref = "ideaGradlePlugin" }
-kotlinJvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
-kotlinx-binaryCompatValidator = { id = "org.jetbrains.kotlinx.binary-compatibility-validator", version.ref = "kotlinxBinaryCompat" }
-kotlinx-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
-kotlinter = { id = "org.jmailen.kotlinter", version.ref = "kotlinterGradlePlugin" }
-poko = { id = "dev.drewhamilton.poko", version.ref = "poko" }
