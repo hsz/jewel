@@ -2,7 +2,6 @@ import java.io.ByteArrayOutputStream
 
 plugins {
     alias(libs.plugins.composeDesktop) apply false
-    `jewel-linting`
 }
 
 dependencies {
